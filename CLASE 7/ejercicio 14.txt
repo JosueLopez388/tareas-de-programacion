@@ -1,0 +1,6 @@
+let ira = prompt ("Jocsan ira al cine hoy SI/NO")
+if (ira.toUpperCase()=="SI")
+   console.log("Jocsan ira al cine hoy")
+else
+   console.log("Jocsan no ira al cine hoy")
+   

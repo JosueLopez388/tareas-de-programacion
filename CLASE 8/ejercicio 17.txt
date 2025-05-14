@@ -1,0 +1,13 @@
+// 6. muestra en que estacion del año nos encontramos dependiendo del valor de una variable "mes"
+
+let mes = prompt("ingrese el mes:")
+
+if (mes =="enero"|| mes =="febrero"|| mes == "marzo")
+    console.log("estamos en primavera")
+else if(mes =="abril"|| mes =="mayo"||mes =="junio")
+    console.log("estamos en verano")
+else if(mes =="julio"|| mes =="agosto"||mes =="septiembre")
+    console.log("estamos en otoño")
+else
+    console.log("Etamos en invierno")
+    

@@ -1,0 +1,6 @@
+
+let radio = prompt("ingrese el radio del circulo en metros");
+let area = Math.PI*Math.pow(radio,2);
+console.log("El area del circulo es :"+area);
+let circunferencia = 2*Math.PI*radio;
+console.log("La circunferencia del circulo es:"+circunferencia);

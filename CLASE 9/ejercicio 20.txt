@@ -1,0 +1,17 @@
+console.log ("menu de viajes\n1.la mosquitia\n2.Ruinas de copan\n3.la biosfera del rio platano\n4.salir\n")
+let op = Number(prompt("ingrese opcion para viajar:"))
+
+let subtotal =0.0
+
+if (op ==1){
+    let grupo =Number(prompt("ingrese cuantos grupos de 3 van:"))
+    let personas =Number(prompt("ingrese numero de personas extras:"))
+    subtotal =5000*grupo +(personas*1000)
+    let pa=prompt("conocimiento de primeros auxilios: si/no")
+    if (pa==`si`)
+    subtotal+=300*(grupo*3+personas)
+    
+    total=(grupo*3+personas)*25+subtotal
+    
+    console.log("total a pagar es: ",total)
+}

@@ -1,0 +1,47 @@
+const palabras = ["javascript", "programacion", "ahorcado", "desarrollador", "web"];
+const palabraSecreta = palabras[Math.floor(Math.random() * palabras.length)];
+let palabraAdivinada = Array(palabraSecreta.length).fill("_");
+let intentos = 6;
+
+console.log("¡Bienvenido al juego del Ahorcado!");
+console.log("Adivina la palabra secreta.");
+console.log(palabraAdivinada.join(" "));
+console.log(`Tienes ${intentos} intentos.`);
+
+function jugar(letra) {
+  letra = letra.toLowerCase();
+
+  if (letra.length !== 1 || !letra.match(/[a-z]/)) {
+    console.log("Introduce solo una letra válida.");
+    return;
+  }
+
+  if (palabraAdivinada.includes(letra)) {
+    console.log("Ya adivinaste esa letra.");
+    return;
+  }
+
+  let acierto = false;
+
+  for (let i = 0; i < palabraSecreta.length; i++) {
+    if (palabraSecreta[i] === letra && palabraAdivinada[i] === "_") {
+      palabraAdivinada[i] = letra;
+      acierto = true;
+    }
+  }
+
+  if (!acierto) {
+    intentos--;
+    console.log(`Letra incorrecta. Te quedan ${intentos} intentos.`);
+  } else {
+    console.log("¡Bien! Adivinaste una letra.");
+  }
+
+  console.log(palabraAdivinada.join(" "));
+
+  if (palabraAdivinada.join("") === palabraSecreta) {
+    console.log("🎉 ¡Ganaste! La palabra era: " + palabraSecreta);
+  } else if (intentos === 0) {
+    console.log("💀 Perdiste. La palabra era: " + palabraSecreta);
+  }
+}

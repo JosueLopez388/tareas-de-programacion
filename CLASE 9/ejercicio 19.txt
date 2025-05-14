@@ -1,0 +1,42 @@
+// 6 muestra en que estacion estamos del año dependiendo el valor de una variable "mes"
+
+let mes = prompt("ingrese el mes:")
+
+switch(mes){
+    case ("enero"):
+         console.log ("estamos en primavera")
+         break
+    case ("febrero"):
+         console.log ("estamos en primavera")
+         break
+    case ("marzo"):
+         console.log ("estamos en primavera")
+         break 
+    case ("abril"):
+         console.log ("estamos en verano")
+         break
+    case ("mayo"):
+         console.log ("estamos en verano")
+         break
+    case ("junio"):
+         console.log ("estamos en verano")
+         break
+    case ("julio"):
+         console.log ("estamos en otoño")
+         break
+    case ("agosto"):
+         console.log ("estamos en otoño")
+         break
+    case ("septiembre"):
+         console.log ("estamos en otoño")
+         break
+    case ("octubre"):
+         console.log ("estamos en invierno")
+         break
+    case ("noviembre"):
+         console.log ("estamos en invierno")
+         break
+    case ("diciembre"):
+         console.log ("estamos en invierno")
+         break
+}

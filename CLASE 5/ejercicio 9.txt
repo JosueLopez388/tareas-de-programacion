@@ -1,0 +1,10 @@
+cadena = "Hola mundo"
+console.log(cadena);
+
+console.log(cadena.legith);
+console.log(cadena.toUpperCase());
+console.log(cadena.toLowerCase());
+console.log(cadena.indexOf("mundo"));
+console.log(cadena.replace("mundo","mundito"));
+console.log(cadena)
+console.log(cadena.substring(1,3));

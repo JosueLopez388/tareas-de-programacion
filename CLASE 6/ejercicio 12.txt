@@ -1,0 +1,18 @@
+let cadena = "Hola mundo"; // asegúrate de definir la variable correctamente
+
+console.log(cadena.slice(-3)); // imprime los últimos 3 caracteres
+
+console.log("Este es un split: " + cadena.split("")); // divide en caracteres
+
+let s = cadena.split(""); // array de caracteres
+console.log("El valor del índice s[0]: " + s[0]); // 'H'
+console.log("El valor del índice s[1]: " + s[1]); // 'o'
+console.log("El valor del índice s[1][2]: " + s[1][2]); // undefined, porque s[1] es un carácter
+
+s = "         Hola mundo                  ";
+console.log(s.trim()); // elimina espacios al inicio y al final
+
+console.log(cadena.startsWith("H")); // true
+console.log(cadena.endsWith("o")); // true
+console.log(cadena.includes("a")); // true
+console.log(cadena.repeat(3)); // repite la cadena 3 veces
